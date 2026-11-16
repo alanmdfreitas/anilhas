@@ -1,0 +1,7 @@
+.impeccable/
+node_modules/
+PRODUCT.md
+DESIGN.md
+qa/
+tests/*.json
+*.log

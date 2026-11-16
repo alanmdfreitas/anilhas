@@ -1,0 +1,72 @@
+// Short demos selected from YouTube results on 2026-11-16.
+export const VIDEOS = {
+  pulldown: ['aoHXhJ2x2BQ',54,'Elliott Upton','110 mil','NEUTRAL GRIP LAT PULLDOWN'],
+  chestrow: ['nl2MnK1i504',43,'Testosterone Nation','1 mi','Chest Supported Dumbbell Row'],
+  seatedrow: ['lJoozxC0Rns',16,'PureGym','512 mil','How To Do A Seated Cable Row'],
+  rowmachine: ['TeFo51Q_Nsc',61,'PureGym','674 mil','How To Use The Seated Row Machine'],
+  facepull: ['eTCBSFlCJ_s',26,'NASM','175 mil','How to do a Face Pull'],
+  reversefly: ['3RLqAh8-9Pg',78,'James Harrison','19 mil','Reverse Pec Deck - Exercise Tutorial'],
+  hammer: ['B4RznoFvTl4',20,'PureGym','29 mil','How To Do Hammer Curls'],
+  cablehammer: ['1Quc_tOv97I',88,'ScottHermanFitness','465 mil','How To: Rope Hammer Curl'],
+  pallof: ['nFspBRHke4w',28,'StKatesAthletics','2,3 mi','Pallof Press'],
+  rotation: ['4fM554Org3o',19,'Onyx Physical Therapy and Wellness','13 mil','Shoulder External Rotation with Resistance Band'],
+  deadbug: ['o4GKiEoYClI',21,'Pursuit Physical Therapy','1,4 mi','Dead Bug Exercise For Core Stability'],
+  hamcurl: ['Orxowest56U',11,'Renaissance Periodization','970 mil','Seated Leg Curl'],
+  lyingcurl: ['jxctD6fL_FQ',51,'Bodybuilding.com','212 mil','Lying Leg Curls'],
+  bridge: ['tqp5XQPpTxY',21,'PureGym','322 mil','How To Do A Glute Bridge'],
+  squeeze: ['nuMxlv2i8Aw',13,'OrthoRI Rehab','55 mil','Hip Adductor Ball Squeeze'],
+  birddog: ['QABW99qPiNM',79,'Muscle & Motion','591 mil','Bird Dog Exercise'],
+  sideplank: ['wSXlpIr6dqQ',38,'Dr. Chris Pieton','35 mil','Kneeling Side Plank'],
+  dbbench: ['VzZe73G4vIs',37,'Andrew Coates','30 mil','Neutral Grip Dumbbell Bench Press'],
+  floorpress: ['ZwhCD-g5JeI',51,'XTC Fitness','7,6 mil','Dumbbell Floor Press - Neutral Grip'],
+  chestpress: ['edHBBJrCOAs',66,'Vital Health And Performance','6,5 mil','Machine Neutral Grip Chest Press'],
+  inclinepush: ['yAbg3_pJKvw',22,'PureGym','234 mil','How To Do An Incline Push Up'],
+  lateral: ['z-kOn7flIZg',16,'PureGym','82 mil','How To Do Lateral Raises'],
+  triceps: ['LXkCrxn3caQ',16,'PureGym','721 mil','How To Do A Tricep Pushdown'],
+  abduction: ['g9FtnmsIYgI',40,'Baptist Health','798 mil','Side Lying Hip Abduction'],
+  clamshell: ['39vuP5xozsI',17,'MedStar Health','475 mil','Clams Exercise Demonstration'],
+  curl: ['MtXdEcW3Eog',29,'PureGym','103 mil','How To Double Arm Curl'],
+};
+
+const ex = (name,video,unit,cue) => ({name,video,unit,cue});
+export const EXERCISES = {
+  pulldown: ex('Puxada neutra','pulldown','machine','Puxe à frente, sem balançar o tronco. Use amplitude confortável para o ombro.'),
+  chestrow: ex('Remada com peito apoiado','chestrow','dumbbell','Mantenha o peito no banco e a coluna confortável. Registre o peso de um halter.'),
+  seatedrow: ex('Remada baixa no cabo','seatedrow','machine','Tronco estável. Puxe com os cotovelos sem levar a lombar para trás.'),
+  rowmachine: ex('Remada na máquina','rowmachine','machine','Ajuste o apoio ao peito e mantenha uma amplitude confortável.'),
+  facepull: ex('Face pull com corda','facepull','machine','Carga leve, puxando em direção aos olhos. Pare antes de surgir dor no ombro.'),
+  reversefly: ex('Crucifixo inverso na máquina','reversefly','machine','Peito apoiado. Não force o braço para trás do tronco.'),
+  hammer: ex('Rosca martelo','hammer','dumbbell','Palmas uma para a outra e cotovelos parados. Peso de um halter.'),
+  cablehammer: ex('Rosca martelo na corda','cablehammer','machine','Use pegada neutra e mantenha os cotovelos ao lado do corpo.'),
+  pallof: ex('Pallof press','pallof','machine','Empurre o cabo sem girar o tronco. Faça os dois lados antes de marcar a série.'),
+  rotation: ex('Rotação externa com elástico','rotation','body','Cotovelo junto ao corpo; gire o antebraço para fora. Resistência leve e sem dor.'),
+  deadbug: ex('Dead bug','deadbug','body','Movimento lento, sem arquear a lombar. Encurte o alcance se perder o controle. Repetições por lado.'),
+  hamcurl: ex('Cadeira flexora','hamcurl','machine','Carga confortável e movimento controlado. Se o apoio pressionar a região dolorida, interrompa.'),
+  lyingcurl: ex('Mesa flexora','lyingcurl','machine','Mantenha a pelve apoiada. Se o rolo pressionar a região dolorida, interrompa.'),
+  bridge: ex('Ponte de glúteos','bridge','body','Comece sem carga. Suba só até alinhar quadril e tronco, sem arquear a lombar. Não faça se doer.'),
+  squeeze: ex('Adução isométrica com bola','squeeze','seconds','Deitado, aperte levemente uma bola entre os joelhos, sem dor. Uma toalha dobrada pode substituir a bola.'),
+  birddog: ex('Bird dog','birddog','body','Estenda braço e perna opostos sem girar o quadril. Conte as repetições por lado.'),
+  sideplank: ex('Prancha lateral com joelhos','sideplank','seconds','Joelhos apoiados e quadril alinhado. Faça o tempo de cada lado antes de marcar. Se o ombro doer, use o substituto.'),
+  dbbench: ex('Supino com halteres neutros','dbbench','dumbbell','Palmas uma para a outra. Limite a descida à amplitude indolor; cotovelos perto da linha do tronco. Peso por halter.'),
+  floorpress: ex('Supino no chão com halteres','floorpress','dumbbell','Pegada neutra. Encoste os braços suavemente no chão; não force o ombro. Peso por halter.'),
+  chestpress: ex('Chest press neutro','chestpress','machine','Ajuste o banco e use pegada neutra. Pare se a máquina não permitir um movimento confortável.'),
+  inclinepush: ex('Flexão inclinada no banco','inclinepush','body','Apoie as mãos em uma superfície firme. Escolha uma altura que permita movimento indolor.'),
+  lateral: ex('Elevação lateral com halteres','lateral','dumbbell','Carga leve, braços um pouco à frente do tronco. Suba só até onde for confortável, no máximo à altura do ombro.'),
+  triceps: ex('Tríceps na corda','triceps','machine','Cotovelos junto ao corpo. Estenda sem balançar o tronco.'),
+  abduction: ex('Abdução de quadril deitado','abduction','body','De lado, eleve a perna sem girar a pelve. Amplitude curta e indolor; repetições por lado.'),
+  clamshell: ex('Clamshell deitado','clamshell','body','Joelhos dobrados, pés juntos. Abra o joelho sem girar a pelve e sem dor; repetições por lado.'),
+  curl: ex('Rosca com halteres','curl','dumbbell','Cotovelos parados, sem embalo. Registre o peso de um halter.'),
+};
+
+const item=(id,sets,min,max,rest,alt=null,side=false)=>({id,sets,min,max,rest,alt,side});
+export const WORKOUTS = [
+  {id:'seg',day:'Seg',name:'Superiores · puxar',time:'06h',minutes:50,focus:'Costas, bíceps e core',warmup:'5 min: mobilidade confortável e 1–2 séries leves de aproximação da primeira puxada.',warmupVideo:'rotation',cardio:'Opcional: 15–25 min de bike sentada, leve e apenas se não provocar dor. Corrida suspensa até avaliação.',items:[item('pulldown',3,8,12,90),item('chestrow',3,8,12,90,'seatedrow'),item('facepull',2,12,15,60,'reversefly'),item('hammer',2,10,12,60,'cablehammer'),item('pallof',2,10,12,45,'deadbug',true)]},
+  {id:'ter',day:'Ter',name:'Inferiores · controle',time:'05h30',minutes:40,focus:'Movimentos leves e core',warmup:'3–5 min de bike sentada somente se indolor. Esta sessão é provisória: sem saltos, agachamento pesado ou trabalho explosivo.',cardio:'Não compense a pausa do impacto com mais carga. Se algum movimento incomodar a canela ou a virilha, interrompa.',items:[item('hamcurl',3,10,12,75,'lyingcurl'),item('bridge',2,10,12,60),item('squeeze',2,15,20,45),item('deadbug',2,6,8,45,'birddog',true),item('sideplank',2,15,20,45,'deadbug',true)]},
+  {id:'qua',day:'Qua',name:'Superiores · empurrar',time:'17h',minutes:45,focus:'Peito, ombros e tríceps',warmup:'5 min: rotação externa leve e 1–2 séries de aproximação do supino, dentro da amplitude confortável.',warmupVideo:'rotation',cardio:'Society suspenso nesta fase provisória, assim como corridas, saltos e vôlei. A ausência de dor no jogo não libera o impacto.',items:[item('dbbench',3,8,10,120,'floorpress'),item('chestpress',2,10,12,90,'inclinepush'),item('lateral',2,12,15,60),item('triceps',3,10,12,60),item('rotation',2,12,15,45)]},
+  {id:'qui',day:'Qui',name:'Inferiores · leve + core',time:'18h',minutes:45,focus:'Controle de quadril e recuperação',warmup:'3–5 min de bike sentada se indolor. Carga baixa: a sessão deve terminar com sensação de reserva.',cardio:'Opcional: 10–15 min de bike sentada, em ritmo de conversa e sem dor durante ou depois.',items:[item('squeeze',2,15,20,45),item('hamcurl',2,12,15,60,'lyingcurl'),item('abduction',2,10,12,45,'clamshell',true),item('bridge',2,10,12,60),item('birddog',2,6,8,45,'deadbug',true)]},
+  {id:'sex',day:'Sex',name:'Superiores · misto',time:'06h',minutes:55,focus:'Costas, peito e braços',warmup:'5 min de mobilidade confortável e séries leves de aproximação. Use uma carga que deixe repetições na reserva.',warmupVideo:'rotation',cardio:'Opcional: 15–25 min de bike sentada, leve e indolor. Não há corrida nesta fase provisória.',items:[item('pulldown',3,8,12,90),item('dbbench',2,8,10,90,'floorpress'),item('seatedrow',3,10,12,90,'rowmachine'),item('reversefly',2,12,15,60,'facepull'),item('curl',2,10,12,60,'hammer'),item('triceps',2,10,12,60),item('sideplank',2,15,20,45,'deadbug',true)]},
+  {id:'sab',day:'Sáb',name:'Extra · opcional',time:'Livre',minutes:30,focus:'Reposição ou superiores leves',optional:true,warmup:'Se faltou um treino, use “Repor treino” abaixo. Se completou a semana e estiver recuperado, este extra é opcional.',cardio:'Opcional: 10–15 min de bike sentada sem dor. Descansar também é uma escolha válida.',items:[item('seatedrow',2,10,12,75,'chestrow'),item('inclinepush',2,8,12,75,'floorpress'),item('hammer',2,10,12,60,'cablehammer'),item('pallof',2,8,10,45,'deadbug',true)]},
+  {id:'dom',day:'Dom',name:'Recuperar · opcional',time:'Livre',minutes:15,focus:'Core leve ou descanso completo',optional:true,warmup:'Descanso é a opção principal. Se quiser se movimentar e estiver sem dor, faça só este core leve. Não é uma sexta sessão obrigatória.',cardio:'Vôlei fica suspenso até avaliação e orientação de retorno ao impacto. Depois, vamos encaixar o domingo mensal no plano.',items:[item('deadbug',1,6,8,45,'birddog',true),item('birddog',1,6,8,45,'deadbug',true)]},
+];
+export const SAFETY = 'Dor localizada no osso da canela exige avaliação presencial. Até avaliar: suspenda corrida, saltos, society e vôlei. Bike sentada e musculação adaptada só se indolores; interrompa qualquer exercício que reproduza a dor. Dor ao andar, em repouso, piora importante ou dificuldade de apoiar o pé pedem atendimento mais rápido.';
+export const SOURCES = [{label:'AAOS · lesões ósseas por estresse',url:'https://orthoinfo.aaos.org/en/diseases--conditions/stress-fractures'},{label:'Health NZ · fraturas por estresse da canela',url:'https://www.healthnz.govt.nz/health-topics/conditions-treatments/feet-and-ankles/stress-fractures-of-the-foot-and-shin-bone'}];
