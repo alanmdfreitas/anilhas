@@ -4,7 +4,7 @@ PWA de registro de treino, feito primeiro para o celular. HTML, CSS e módulos J
 
 ## Usar
 
-Abra o endereço publicado no Chrome do Android e escolha **Adicionar à tela inicial → Instalar**. O primeiro acesso precisa de internet. Depois, sessões, cargas, histórico e cronômetro funcionam offline. Vídeos abrem no YouTube e precisam de conexão.
+Abra o endereço publicado no Chrome do Android e escolha **Adicionar à tela inicial → Instalar**. O primeiro acesso precisa de internet. Depois, sessões, cargas, histórico e cronômetro funcionam offline. Os vídeos tocam dentro do app (YouTube) e precisam de conexão.
 
 Informe a carga real na primeira série. Depois de confirmá-la, a mesma carga preenche as séries seguintes ainda vazias. No próximo treino, o app usa os valores do histórico daquele exercício. Halteres usam o peso de **um** halter. Repetições são informadas manualmente.
 
