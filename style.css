@@ -104,4 +104,7 @@ input[type=date]{display:block;width:100%;min-height:48px;background:var(--raise
 
 .button-row>.button{min-width:0;padding-left:8px;padding-right:8px}.card .button-row{margin-bottom:0}
 
+.note{display:flex;gap:10px;align-items:flex-start;margin:12px 0 16px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;font-size:14px;color:var(--text);line-height:1.5}.note .icon{width:18px;height:18px;color:var(--muted);margin-top:2px}.note span{white-space:pre-wrap;overflow-wrap:anywhere}
+.history-row>span:nth-child(2){flex:1}.history-row>.icon{margin-left:0}.history-row>.icon:not(:last-child){color:var(--muted)}
+.warn-note{color:var(--yellow)!important}.warn-note .icon{color:var(--yellow)!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
