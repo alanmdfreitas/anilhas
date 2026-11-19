@@ -15,13 +15,13 @@ export function validateState(value){
   const ids=new Set();
   for(const s of value.sessions){
     if(!s||typeof s.id!=='string'||ids.has(s.id)||!/^\d{4}-\d{2}-\d{2}$/.test(s.date)||isoDate(parseDate(s.date))!==s.date||!WORKOUTS.some(w=>w.id===s.workoutId)||!Number.isInteger(s.week)||s.week<1||s.week>4||!Number.isInteger(s.cycle)||s.cycle<1||typeof s.startedAt!=='number'||!Number.isFinite(s.startedAt)||!Array.isArray(s.entries)||s.entries.length>30)throw new Error('O backup contém uma sessão inválida. Nenhum registro foi alterado.');
-    ids.add(s.id);const slots=new Set();
+    ids.add(s.id);const slots=new Set();let maxSlot=-1;
     const session={id:s.id,date:s.date,workoutId:s.workoutId,week:s.week,cycle:s.cycle,startedAt:s.startedAt,finishedAt:typeof s.finishedAt==='number'&&Number.isFinite(s.finishedAt)&&s.finishedAt>=s.startedAt?s.finishedAt:null,notes:typeof s.notes==='string'?s.notes.slice(0,1000):'',entries:[]};
     const workout=WORKOUTS.find(w=>w.id===s.workoutId);
-    for(const e of s.entries){const prescription=e&&workout.items[e.slot];if(!e||!Number.isInteger(e.slot)||!prescription||slots.has(e.slot)||!EXERCISES[e.exerciseId]||![prescription.id,prescription.alt].includes(e.exerciseId)||!Array.isArray(e.sets)||e.sets.length!==setsFor(prescription,s.week))throw new Error('O backup contém um exercício inválido. Nenhum registro foi alterado.');slots.add(e.slot);
+    for(const e of s.entries){const prescription=e&&Number.isInteger(e.slot)?workout.items[e.slot]:null;const allowed=prescription?[prescription.id,prescription.alt,...(prescription.legacy||[])].filter(Boolean):[];if(!e||!prescription||slots.has(e.slot)||!EXERCISES[e.exerciseId]||!allowed.includes(e.exerciseId)||!Array.isArray(e.sets)||e.sets.length!==setsFor(prescription,s.week))throw new Error('O backup contém um exercício inválido. Nenhum registro foi alterado.');slots.add(e.slot);maxSlot=Math.max(maxSlot,e.slot);
       session.entries.push({slot:e.slot,exerciseId:e.exerciseId,sets:e.sets.map(r=>{if(!r||!(r.kg===null||typeof r.kg==='number'&&validNumber(r.kg)!==null)||!(r.reps===null||Number.isInteger(r.reps)&&validNumber(r.reps,600)!==null)||typeof r.done!=='boolean'||r.done&&(r.kg===null||!Number.isInteger(r.reps)||r.reps<1))throw new Error('O backup contém uma série inválida. Nenhum registro foi alterado.');return {kg:r.kg,reps:r.reps,done:r.done,rirOk:r.rirOk===true};})});
     }
-    if(slots.size!==workout.items.length)throw new Error('O backup contém uma sessão incompleta. Nenhum registro foi alterado.');
+    if(!slots.size||slots.size!==maxSlot+1||slots.size>workout.items.length)throw new Error('O backup contém uma sessão incompleta. Nenhum registro foi alterado.');
     clean.sessions.push(session);
   }
   if(value.timer&&typeof value.timer.deadline==='number'&&Number.isFinite(value.timer.deadline)&&value.timer.deadline>Date.now()-86400000&&value.timer.deadline<Date.now()+3600000&&typeof value.timer.total==='number'&&value.timer.total>0&&typeof value.timer.label==='string')clean.timer={deadline:value.timer.deadline,total:value.timer.total,label:value.timer.label.slice(0,120)};

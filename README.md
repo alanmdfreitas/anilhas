@@ -10,6 +10,8 @@ Informe a carga real na primeira série. Depois de confirmá-la, a mesma carga p
 
 Confirme cada série para iniciar o descanso. O tempo usa um horário de término e se recupera ao reabrir a página. Som e vibração podem não tocar com o app em segundo plano ou com a tela bloqueada; a tentativa de manter a tela acesa depende do navegador e do aparelho.
 
+Para fazer o treino de outro dia hoje, use **Trocar treino do dia** antes de iniciar. O registro fica na data de hoje, com o treino escolhido, e aparece no histórico com o nome desse treino.
+
 ## Dados
 
 Os registros ficam no `localStorage` do navegador, sem cadastro, analytics ou sincronização. Em **Ajustes → Exportar**, baixe um arquivo de backup. Importe o arquivo no outro aparelho. A importação é validada antes de substituir dados e pede confirmação. Limpar dados do navegador pode apagar o histórico.
@@ -18,7 +20,7 @@ O ciclo avança às segundas a partir da data configurada em Ajustes. A semana 4
 
 ## Plano
 
-Esta versão inclui uma fase provisória sem impacto. Corridas, saltos e esportes com impacto dependem de avaliação e ajuste do plano; a passagem de semana no app não equivale a liberação. Qualquer exercício que provoque dor deve ser interrompido. As orientações não são diagnóstico ou reabilitação individual presencial.
+Esta versão retoma o impacto aos poucos. Corridas e saltos entram com volume baixo; a passagem de semana no app não equivale a liberação médica. Qualquer exercício que provoque dor deve ser interrompido. As orientações não são diagnóstico ou reabilitação individual presencial.
 
 ## Desenvolvimento
 
