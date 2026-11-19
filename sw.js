@@ -1,4 +1,4 @@
-const VERSION='anilhas-1.6.0';
+const VERSION='anilhas-1.7.0';
 const CACHE=`${VERSION}:${self.registration.scope}`;
 const ASSETS=['./','./index.html','./style.css','./app.js','./core.js','./data.js','./manifest.webmanifest','./icon.svg','./icons/icon-192.png','./icons/icon-512.png','./icons/maskable-512.png','./fonts/archivo-latin.woff2'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS))));

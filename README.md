@@ -10,7 +10,7 @@ Informe a carga real na primeira série. Depois de confirmá-la, a mesma carga p
 
 Confirme cada série para iniciar o descanso. O tempo usa um horário de término e se recupera ao reabrir a página. Som e vibração podem não tocar com o app em segundo plano ou com a tela bloqueada; a tentativa de manter a tela acesa depende do navegador e do aparelho.
 
-Para fazer o treino de outro dia hoje, use **Trocar treino do dia** antes de iniciar. O registro fica na data de hoje, com o treino escolhido, e aparece no histórico com o nome desse treino.
+Para fazer o treino de outro dia hoje, use **Trocar treino do dia** antes de iniciar. O registro fica na data de hoje, com o treino escolhido, e aparece no histórico com o nome desse treino. Depois de iniciar, **Trocar treino de hoje** substitui o treino atual enquanto não houver nenhuma série marcada.
 
 ## Dados
 
@@ -34,7 +34,7 @@ npm run check
 
 Sirva por HTTP local; módulos e service worker não funcionam abrindo `index.html` como arquivo. Publique os arquivos desta pasta na raiz de um repositório com GitHub Pages, fonte `main` e pasta `/`. `.nojekyll` desativa o processamento Jekyll.
 
-Ao alterar recursos em cache, atualize a versão no `sw.js`. Atualizações aguardam o usuário aplicá-las em Ajustes, depois de finalizar a sessão.
+Ao alterar recursos em cache, atualize a versão no `sw.js`. Em **Ajustes → Versão**, toque em **Verificar atualização**. Se houver uma versão nova, **Aplicar atualização** aparece ali e em **Instalar no Android**; o app pede para finalizar o treino antes de recarregar.
 
 ## Créditos
 
