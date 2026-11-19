@@ -6,6 +6,7 @@ export function monday(date=isoDate()){const d=parseDate(date);d.setDate(d.getDa
 export function dayOffset(date,n){const d=parseDate(date);d.setDate(d.getDate()+n);return isoDate(d);}
 export function cycleFor(start,date){const dayMs=s=>Date.UTC(...s.split('-').map((x,i)=>Number(x)-(i===1?1:0)));const weeks=Math.floor((dayMs(monday(date))-dayMs(monday(start)))/604800000);return {week:((Math.max(0,weeks))%4)+1,cycle:Math.floor(Math.max(0,weeks)/4)+1};}
 export const setsFor=(item,week)=>week===4?Math.max(1,Math.ceil(item.sets/2)):item.sets;
+export const cardioFor=(workout,week)=>Array.isArray(workout.cardioWeeks)?(workout.cardioWeeks[week-1]||workout.cardio):workout.cardio;
 export function targetFor(item,id=item.id){if(id!==item.id&&['deadbug','birddog'].includes(id))return {...item,min:6,max:8};if(id!==item.id&&EXERCISES[id].unit==='seconds')return {...item,min:15,max:20};return item;}
 export function initialState(){return {version:1,settings:{startDate:monday(),sound:true,vibrate:true},sessions:[],timer:null,lastBackup:null};}
 export function validNumber(v,max=500){if(typeof v==='string'&&!v.trim())return null;const n=Number(String(v).replace(',','.'));return Number.isFinite(n)&&n>=0&&n<=max?n:null;}
