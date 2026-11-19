@@ -22,7 +22,7 @@ O ciclo avança às segundas a partir da data configurada em Ajustes. A semana 4
 
 Esta versão retoma o impacto aos poucos. Corridas e saltos entram com volume baixo; a passagem de semana no app não equivale a liberação médica. Qualquer exercício que provoque dor deve ser interrompido. As orientações não são diagnóstico ou reabilitação individual presencial.
 
-A corrida segue um bloco de 4 semanas: ritmo, intervalado, arrancadas e alívio. Só a segunda é intensa. A segunda corrida da semana é a sexta leve **ou** a longa de sábado, nunca as duas; a longa sobe 1 km a cada 2 semanas sem dor. A cada 8–12 semanas, refaça os testes de 5 km, prancha e salto e anote no treino. Antes do society, use o FIFA 11+ como aquecimento; o vídeo completo abre no botão de cardio da quarta.
+A corrida segue um bloco de 4 semanas: ritmo, intervalado, arrancadas e alívio. Só a segunda é intensa. A segunda corrida da semana é a sexta leve **ou** a longa de sábado, nunca as duas; a longa sobe 1 km a cada 2 semanas sem dor. A sexta inclui Nordic curl; a quinta inclui prancha copenhague curta e panturrilha em pé. A cada 8–12 semanas, refaça os testes de 5 km, prancha e salto e anote no treino. Antes do society, use o FIFA 11+ como aquecimento; o vídeo completo abre no botão de cardio da quarta.
 
 ## Desenvolvimento
 
