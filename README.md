@@ -36,6 +36,8 @@ Sirva por HTTP local; módulos e service worker não funcionam abrindo `index.ht
 
 Ao alterar recursos em cache, atualize a versão no `sw.js`. Em **Ajustes → Versão**, toque em **Verificar atualização**. Se houver uma versão nova, **Aplicar atualização** aparece ali e em **Instalar no Android**; o app pede para finalizar o treino antes de recarregar.
 
+Se uma versão antiga não mostrar a atualização, abra `reset.html` no mesmo endereço. Ela remove só o service worker e os caches; o `localStorage` com treinos e cargas não é apagado.
+
 ## Créditos
 
 Fonte Archivo: Omnibus-Type / Google Fonts, sob SIL Open Font License, em `fonts/OFL.txt`. Ícones e ilustrações vetoriais foram desenhados para este projeto. Os vídeos são links para seus respectivos criadores; títulos, durações e popularidade foram consultados em 16/11/2026 nos resultados do YouTube e podem mudar.
